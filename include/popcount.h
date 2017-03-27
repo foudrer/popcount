@@ -4,6 +4,7 @@
 #include <iostream>
 #include <nmmintrin.h>
 #include <time.h>
+#include <stdint.h>
 
 uint32_t direct_popcount_32(uint32_t num);
 uint32_t directop_popcount_32(uint32_t num);
