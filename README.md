@@ -4,4 +4,5 @@ popcount method comparison
 2. directop
 3. fast
 4. parallel
-5. cpu
+5. hackmem (todo)
+6. cpu
