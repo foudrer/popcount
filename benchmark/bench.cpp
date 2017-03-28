@@ -7,7 +7,7 @@ int main() {
 	std::uniform_int_distribution<uint32_t> dis1(0, 4294967295);
 	std::uniform_int_distribution<uint64_t> dis2(4294967296, 18446744073709551615ULL);
 
-	std::cout << "32bit number popcount begin..." << std::endl;
+	std::cout << "32bit number popcount begins..." << std::endl;
 	for (int i=0; i<loop; i++) {
 		uint32_t num = dis1(random);
 		std::cout << "32bit unsigned number: " << num << std::endl;
@@ -46,13 +46,11 @@ int main() {
 	}
 
 
-	std::cout << "32bit number popcount over!" << std::endl;
+	std::cout << "32bit number popcount is over!" << std::endl;
 	std::cout << " " << std::endl;
 	std::cout << " " << std::endl;
 	std::cout << " " << std::endl;
-	std::cout << " " << std::endl;
-	std::cout << " " << std::endl;
-	std::cout << "64bit number popcount begin..." << std::endl;
+	std::cout << "64bit number popcount begins..." << std::endl;
 	sleep(2);		
 	
 	for (int i=0; i<loop; i++) {
@@ -92,6 +90,6 @@ int main() {
 		std::cout << "next 64bit number sampling" << std::endl;
 	}
 	
-	std::cout << "64bit number popcount over!" << std::endl;
+	std::cout << "64bit number popcount is over!" << std::endl;
 	return 0;
 }
