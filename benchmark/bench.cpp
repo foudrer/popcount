@@ -14,35 +14,36 @@ int main() {
 			
 		sleep(2);		
 		clock_gettime(CLOCK_REALTIME, &time_start);
-		std ::cout << "direct_popcount_32 result: " << direct_popcount_32(num) << std::endl;	
+        uint32_t result = direct_popcount_32(num);
 		clock_gettime(CLOCK_REALTIME, &time_end);
-		std::cout << "##########################direct_popcount_32 duration: " << time_end.tv_sec-time_start.tv_sec << " s " << time_end.tv_nsec-time_start.tv_nsec << " ns" << std::endl;
+		std::cout << "direct_popcount_32 result: " << result << " and duration: " << time_end.tv_sec-time_start.tv_sec << " s " << time_end.tv_nsec-time_start.tv_nsec << " ns" << std::endl;
 
 		clock_gettime(CLOCK_REALTIME, &time_start);
-		std ::cout << "directop_popcount_32 result: " << directop_popcount_32(num) << std::endl;	
+        result = directop_popcount_32(num);
 		clock_gettime(CLOCK_REALTIME, &time_end);
-		std::cout << "##########################directop_popcount_32 duration: " << time_end.tv_sec-time_start.tv_sec << " s " << time_end.tv_nsec-time_start.tv_nsec << " ns" << std::endl;
+		std::cout << "directop_popcount_32 result: " << result << " and duration: " << time_end.tv_sec-time_start.tv_sec << " s " << time_end.tv_nsec-time_start.tv_nsec << " ns" << std::endl;
 
 		clock_gettime(CLOCK_REALTIME, &time_start);
-		std ::cout << "fast_popcount_32 result: " << fast_popcount_32(num) << std::endl;	
+        result = fast_popcount_32(num);
 		clock_gettime(CLOCK_REALTIME, &time_end);
-		std::cout << "##########################fast_popcount_32 duration: " << time_end.tv_sec-time_start.tv_sec << " s " << time_end.tv_nsec-time_start.tv_nsec << " ns" << std::endl;
+		std::cout << "fast_popcount_32 result: " << result << " and duration: " << time_end.tv_sec-time_start.tv_sec << " s " << time_end.tv_nsec-time_start.tv_nsec << " ns" << std::endl;
 
 		clock_gettime(CLOCK_REALTIME, &time_start);
-		std ::cout << "parallel_popcount_32 result: " << parallel_popcount_32(num) << std::endl;	
+        result = parallel_popcount_32(num);
 		clock_gettime(CLOCK_REALTIME, &time_end);
-		std::cout << "##########################parallel_popcount_32 duration: " << time_end.tv_sec-time_start.tv_sec << " s " << time_end.tv_nsec-time_start.tv_nsec << " ns" << std::endl;
+		std::cout << "parallel_popcount_32 result: " << result << " and duration: " << time_end.tv_sec-time_start.tv_sec << " s " << time_end.tv_nsec-time_start.tv_nsec << " ns" << std::endl;
 
 		clock_gettime(CLOCK_REALTIME, &time_start);
-		std ::cout << "hackmem_popcount_32 result: " << hackmem_popcount_32(num) << std::endl;	
+        result = hackmem_popcount_32(num);
 		clock_gettime(CLOCK_REALTIME, &time_end);
-		std::cout << "##########################hackmem_popcount_32 duration: " << time_end.tv_sec-time_start.tv_sec << " s " << time_end.tv_nsec-time_start.tv_nsec << " ns" << std::endl;
+		std::cout << "hackmem_popcount_32 result: " << result << " and duration: " << time_end.tv_sec-time_start.tv_sec << " s " << time_end.tv_nsec-time_start.tv_nsec << " ns" << std::endl;
 
 		clock_gettime(CLOCK_REALTIME, &time_start);
-		std ::cout << "cpu_popcount_32 result: " << cpu_popcount_32(num) << std::endl;	
+        result = cpu_popcount_32(num);
 		clock_gettime(CLOCK_REALTIME, &time_end);
-		std::cout << "##########################cpu_popcount_32 duration: " << time_end.tv_sec-time_start.tv_sec << " s " << time_end.tv_nsec-time_start.tv_nsec << " ns" << std::endl;
+		std::cout << "cpu_popcount_32 result: " << result << " and duration: " << time_end.tv_sec-time_start.tv_sec << " s " << time_end.tv_nsec-time_start.tv_nsec << " ns" << std::endl;
 		std::cout << "next 32bit number sampling" << std::endl;
+	    std::cout << " " << std::endl;
 	}
 
 
@@ -59,35 +60,36 @@ int main() {
 		sleep(2);		
 		
 		clock_gettime(CLOCK_REALTIME, &time_start);
-		std ::cout << "direct_popcount_64 result: " << direct_popcount_64(num) << std::endl;	
+        uint64_t result = direct_popcount_64(num);
 		clock_gettime(CLOCK_REALTIME, &time_end);
-		std::cout << "##########################direct_popcount_64 duration: " << time_end.tv_sec-time_start.tv_sec << " s " << time_end.tv_nsec-time_start.tv_nsec << " ns" << std::endl;
+		std::cout << "direct_popcount_64 result: " << result << " and duration: " << time_end.tv_sec-time_start.tv_sec << " s " << time_end.tv_nsec-time_start.tv_nsec << " ns" << std::endl;
 
 		clock_gettime(CLOCK_REALTIME, &time_start);
-		std ::cout << "directop_popcount_64 result: " << directop_popcount_64(num) << std::endl;	
+        result = directop_popcount_64(num);
 		clock_gettime(CLOCK_REALTIME, &time_end);
-		std::cout << "##########################directop_popcount_64 duration: " << time_end.tv_sec-time_start.tv_sec << " s " << time_end.tv_nsec-time_start.tv_nsec << " ns" << std::endl;
+		std::cout << "directop_popcount_64 result: " << result << " and duration: " << time_end.tv_sec-time_start.tv_sec << " s " << time_end.tv_nsec-time_start.tv_nsec << " ns" << std::endl;
 
 		clock_gettime(CLOCK_REALTIME, &time_start);
-		std ::cout << "fast_popcount_64 result: " << fast_popcount_64(num) << std::endl;	
+        result = fast_popcount_64(num);
 		clock_gettime(CLOCK_REALTIME, &time_end);
-		std::cout << "##########################fast_popcount_64 duration: " << time_end.tv_sec-time_start.tv_sec << " s " << time_end.tv_nsec-time_start.tv_nsec << " ns" << std::endl;
+		std::cout << "fast_popcount_64 result: " << result << " and duration: " << time_end.tv_sec-time_start.tv_sec << " s " << time_end.tv_nsec-time_start.tv_nsec << " ns" << std::endl;
 
 		clock_gettime(CLOCK_REALTIME, &time_start);
-		std ::cout << "parallel_popcount_64 result: " << parallel_popcount_64(num) << std::endl;	
+        result = parallel_popcount_64(num);
 		clock_gettime(CLOCK_REALTIME, &time_end);
-		std::cout << "##########################parallel_popcount_64 duration: " << time_end.tv_sec-time_start.tv_sec << " s " << time_end.tv_nsec-time_start.tv_nsec << " ns" << std::endl;
+		std::cout << "parallel_popcount_64 result: " << result << " and duration: " << time_end.tv_sec-time_start.tv_sec << " s " << time_end.tv_nsec-time_start.tv_nsec << " ns" << std::endl;
 
 		clock_gettime(CLOCK_REALTIME, &time_start);
-		std ::cout << "hackmem_popcount_64 result: " << hackmem_popcount_64(num) << std::endl;	
+        result = hackmem_popcount_64(num);
 		clock_gettime(CLOCK_REALTIME, &time_end);
-		std::cout << "##########################hackmem_popcount_64 duration: " << time_end.tv_sec-time_start.tv_sec << " s " << time_end.tv_nsec-time_start.tv_nsec << " ns" << std::endl;
+		std::cout << "hackmem_popcount_64 result: " << result << " and duration: " << time_end.tv_sec-time_start.tv_sec << " s " << time_end.tv_nsec-time_start.tv_nsec << " ns" << std::endl;
 
 		clock_gettime(CLOCK_REALTIME, &time_start);
-		std ::cout << "cpu_popcount_64 result: " << cpu_popcount_64(num) << std::endl;	
+        result = cpu_popcount_64(num);
 		clock_gettime(CLOCK_REALTIME, &time_end);
-		std::cout << "##########################cpu_popcount_64 duration: " << time_end.tv_sec-time_start.tv_sec << " s " << time_end.tv_nsec-time_start.tv_nsec << " ns" << std::endl;
+		std::cout << "cpu_popcount_64 result: " << result << " and duration: " << time_end.tv_sec-time_start.tv_sec << " s " << time_end.tv_nsec-time_start.tv_nsec << " ns" << std::endl;
 		std::cout << "next 64bit number sampling" << std::endl;
+	    std::cout << " " << std::endl;
 	}
 	
 	std::cout << "64bit number popcount is over!" << std::endl;
